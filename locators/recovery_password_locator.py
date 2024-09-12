@@ -1,0 +1,21 @@
+from selenium.webdriver.common.by import By
+
+class RecoveryPasswordLocators:
+    ACCOUNT_BUTTON = By.XPATH, "//p[contains(text(),'Личный Кабинет')]"
+    # Кнопка "Личный кабинет"
+    RECOVERY_PASS_BUTTON = By.XPATH, "//a[contains(text(),'Восстановить пароль')]"
+    # Кнопка "Восстановление пароля"
+    RECOVERY_TITLE = By.XPATH, "//h2[contains(text(),'Восстановление пароля')]"
+    # Заголовок "Восстановление пароля"
+    RECOVERY_INPUT = By.XPATH, "//input[@type='text']"
+    # Инпут "email"
+    RECOVERY_BUTTON = By.XPATH, "//button[contains(text(), 'Восстановить')]"
+    # Кнопка "Восстановить"
+    SAVE_BUTTON = By.XPATH, "//button[contains(text(), 'Сохранить')]"
+    # Кнопка "Сохранить"
+    EYE_BUTTON = By.XPATH, "//div[@class='input__icon input__icon-action']"
+    # Кнопка "Показать/Скрыть пароль"
+    PASSWORD_INPUT = By.XPATH, "//input[@type='password']"
+    # Инпут "пароль"
+    EYE_ATTRIBUTE_ACTIVE = By.XPATH, "//div[contains(@class, 'input_status_active')]"
+    # Атрибут "активный видимость пароля"
